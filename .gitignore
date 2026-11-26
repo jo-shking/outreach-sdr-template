@@ -1,0 +1,57 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+!.env.example
+
+# local Google service-account credentials
+/misa-sdr-agent-*.json
+/.google-service-account.json
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Cached research results, so a company is researched once rather than once per click.
+.research-cache/
+
+# Local backups and one-off diagnostic files.
+/tmp/
+
+# Local Gmail OAuth client and the token minted from it. Both are secrets.
+/google-oauth-client.json
+/client_secret*.json
+/.gmail-token.json
